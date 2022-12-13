@@ -4,6 +4,10 @@
       padding: 0;
 }
 
+#hamburger {
+      display: none;
+}
+
 @font-face {
       font-family: Inter-bold;
       src: url(assets/fonts/static/Inter-Bold.ttf);
@@ -187,4 +191,65 @@ button:hover {
       font-size: 13px;
       padding-right: 2px;
       line-height: 1.6;
+}
+
+@media screen and (max-width: 415px) {
+
+      #container {
+            margin: 0;
+      }
+
+      main {
+            display: grid;
+            place-items: center;
+            margin: auto;
+            grid-template-columns: 92vw;
+            grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+      }
+
+      body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            padding-left: 16px;
+      }
+
+      nav {
+            padding-top: 36px;
+      }
+
+      #hamburger {
+            display: block !important;
+            font-size: 36px;
+      }
+
+      #nav--items {
+            display: none;
+      }
+
+      #web-3 {
+            grid-area: b;
+            padding-right: 20px;
+      }
+
+      #read-more {
+            grid-area: c;
+      }
+
+      #new {
+            grid-area: d;
+      }
+
+      .articles {
+            padding-top: 0;
+      }
+
+
 }
