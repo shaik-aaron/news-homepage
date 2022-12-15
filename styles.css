@@ -4,6 +4,14 @@
       padding: 0;
 }
 
+#sidemenu {
+      display: none;
+}
+
+#overlay {
+      display: none;
+}
+
 #hamburger {
       display: none;
 }
@@ -51,14 +59,14 @@ nav {
       align-items: center;
 }
 
-#nav--items > p {
+#nav--items>p {
       padding-left: 24px;
       padding-top: 0px;
       color: #808080;
       font-size: 16px;
 }
 
-#nav--items > p:hover {
+#nav--items>p:hover {
       cursor: pointer;
       color: #ef5f4e;
 }
@@ -67,10 +75,10 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 0.5fr 0.5fr;
-      grid-template-areas: 
-      "a a b"
-      "c d b"
-      "e f g";
+      grid-template-areas:
+            "a a b"
+            "c d b"
+            "e f g";
       gap: 24px;
       padding-bottom: 80px;
 
@@ -121,8 +129,8 @@ hr {
 }
 
 #web-3 {
-     padding-right: 80px;
-      
+      padding-right: 80px;
+
 }
 
 #web-3-text {
@@ -174,14 +182,14 @@ button:hover {
 }
 
 .article-heading {
-            font-family: Inter-bold;
-                  color: black;
-                  padding-top: 12px;
-                  font-size: 16px;
+      font-family: Inter-bold;
+      color: black;
+      padding-top: 12px;
+      font-size: 16px;
 }
 
 .article-heading:hover {
-      color:#ef5f4e;
+      color: #ef5f4e;
       cursor: pointer;
 }
 
@@ -204,14 +212,14 @@ button:hover {
             place-items: center;
             margin: auto;
             grid-template-columns: 92vw;
-            grid-template-areas: 
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f"
-            "g";
+            grid-template-areas:
+                  "a"
+                  "b"
+                  "c"
+                  "d"
+                  "e"
+                  "f"
+                  "g";
       }
 
       body {
@@ -226,7 +234,7 @@ button:hover {
       }
 
       #hamburger {
-            display: block !important;
+            display: block;
             font-size: 36px;
             position: absolute;
             right: 4%;
@@ -254,4 +262,11 @@ button:hover {
       }
 
 
+      .sidemenu--items {
+            padding-left: 24px;
+            padding-top: 0px;
+            color: black;
+            font-size: 18px;
+            padding-bottom: 36px;
+      }
 }
